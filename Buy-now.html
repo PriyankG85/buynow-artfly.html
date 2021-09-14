@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now page</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="images/logo_main.jpeg">
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="" method="POST">
+            <input type="text" name="name" id="name" placeholder="Full Name" required>
+            <input type="number" name="phone" id="phone" placeholder="Contact No" required>
+            <input type="text" name="email" id="email" placeholder="Email" required>
+            <input type="number" name="pincode" id="pincode" placeholder="Area Pincode" required>
+            <input type="text" name="address" id="address" placeholder="Address" required>
+            <input type="text" name="landMark" id="landMark" placeholder="Land Mark" required>
+            <textarea name="note" id="note" cols="30" rows="8"
+                placeholder="Any special Note if you want to add for gifting!" style="resize: none;"></textarea>
+            <p class="note">To confirm your order You have to make the Pre-Payment.</p>
+            <input id="submit" type="submit" value="Proceed">
+        </form>
+    </div>
+
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        height: 98.46vh;
+        background: linear-gradient(10deg, #3498db, #2ecc71);
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        /* width: 50%; */
+        margin: 10px 0;
+        text-align: center;
+        border: 2px solid greenyellow;
+        width: 30%;
+        height: 76vh;
+        padding: 60px 60px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #28302af6;
+        opacity: 0.7;
+        box-shadow: 20px 25px 20px #28302af6;
+        border-radius: 4%;
+        font-family: monospace;
+    }
+
+    .note {
+        color: aliceblue;
+        margin: 0 0 25px 0;
+        font-size: 17px;
+    }
+
+    input {
+        text-align: center;
+        margin: 0 6px;
+        /* width: 50%; */
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+
+    textarea {
+        width: 83%;
+    }
+
+    input,
+    textarea {
+        margin-bottom: 20px;
+        padding: 10px;
+        font-size: 13.5px;
+        font-family: monospace;
+        background: transparent;
+        color: white;
+        border-radius: 20px;
+        border: 2px solid #3498db;
+        outline: none;
+    }
+
+    input:focus {
+        transition: 0.8s;
+        width: 60%;
+        border: 2px solid #2ecc71;
+    }
+
+    textarea:focus {
+        margin-left: -12px;
+        width: 100%;
+        border: 2px solid #2ecc71;
+        transition: 0.8s;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        text-align: center;
+        color: #fff;
+        opacity: 0.5;
+    }
+
+    #submit {
+        width: 26%;
+        height: 37px;
+        line-height: 50%;
+        text-align: center;
+        font-size: 17px;
+        font-weight: bold;
+        /* height: 50px; */
+    }
+
+    #submit:hover {
+        background-color: #3498db;
+        transition: 0.8s;
+        cursor: pointer;
+    }
+
+    .box {
+        width: 18%;
+        padding: 60px 60px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        background-color: #28302af6;
+        opacity: 0.7;
+        box-shadow: 20px 25px 20px #28302af6;
+        border-radius: 4%;
+        text-align: center;
+        line-height: 50%;
+    }
+
+    .btn {
+        width: 40px;
+        padding: 4px 20px;
+        border: 2px solid #2ecc71;
+        border-radius: 20px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .btn:hover {
+        background-color: #2ecc71;
+        transition: 0.8s;
+    }
+
+    .pass {
+        margin-bottom: 40px;
+    }
+
+    .name {
+        color: #fff;
+        margin-bottom: 50px;
+    }
+
+    @media screen and (max-width: 400px) {
+        body {
+            width: 100vw;
+            height: 112.5vh;
+        }
+
+        .container {
+            margin: 0;
+            width: 78%;
+            height: 100vh;
+            padding: 40px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #28302af6;
+            opacity: 0.7;
+            box-shadow: none;
+            border: 0;
+            border-radius: 0;
+            text-align: center;
+            /* line-height: 10%; */
+        }
+
+        input {
+            width: 54%;
+        }
+
+        input:focus {
+            transition: 0.8s;
+            width: 64%;
+            border: 2px solid #2ecc71;
+            /* margin-left: -20px; */
+        }
+
+        #submit {
+            width: 38%;
+            height: 38px;
+        }
+    }
+</style>
+
+</html>
